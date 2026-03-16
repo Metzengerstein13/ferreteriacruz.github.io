@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Cruz - Calidad y Servicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-combined">
+                    <!-- Tu imagen de logo -->
+                    <img src="img/LOGO.png" alt="Ferretería Cruz" class="logo-icon">
+                    <!-- Texto separado -->
+                   <!-- <div class="logo-text">
+                        <h1>Ferretería <span>Cruz</span></h1>
+                        <p>Calidad y Servicio desde 2006</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#productos" class="nav-link"><i class="fas fa-box-open"></i> Productos</a></li>
+                <li><a href="#marcas" class="nav-link"><i class="fas fa-tags"></i> Marcas</a></li>
+                <li><a href="#servicios" class="nav-link"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
+                <li><a href="#nosotros" class="nav-link"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link"><i class="fas fa-phone-alt"></i> Contacto</a></li>
+            </ul>
+
+            <div class="nav-extra">
+                <a href="tel:+50378530346" class="phone-btn">
+                    <i class="fas fa-phone"></i>
+                    <span>Llamar ahora</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado/Hero -->
+    <header class="hero" id="inicio">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2 class="hero-title">Todo para tu <span class="highlight">hogar y proyecto</span></h2>
+                <p class="hero-text">Herramientas, materiales, asesoría y el mejor servicio en Usulután Norte</p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-primary">Ver promociones</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <h3 class="stat-number" data-count="20">0</h3>
+                    <p>Años de experiencia</p>
+                </div>
+            </div>
+            <div class="stat">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3 class="stat-number" data-count="15000">0</h3>
+                    <p>Clientes satisfechos</p>
+                </div>
+            </div>
+            <div class="stat">
+                <i class="fas fa-boxes"></i>
+                <div>
+                    <h3 class="stat-number" data-count="10000">0</h3>
+                    <p>Productos disponibles aproximadamente</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de productos destacados -->
+    <section class="section" id="productos">
+        <div class="section-header">
+            <h2 class="section-title">Promociones <span class="highlight">de marzo</span></h2>
+            <p class="section-subtitle">Calidad garantizada con las mejores marcas del mercado</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Productos generados dinámicamente con JavaScript -->
+        </div>
+
+        <div class="section-footer">
+            <button class="btn btn-outline" id="loadMore">Ver más productos</button>
+        </div>
+    </section>
+
+    <!-- Sección de marcas -->
+   <section class="section brands-section" id="marcas">
+    <div class="section-header">
+        <h2 class="section-title">Marcas <span class="highlight">Asociadas</span></h2>
+        <p class="section-subtitle">Trabajamos con los mejores fabricantes del sector</p>
+    </div>
+
+    <div class="brands-container">
+        <div class="brand">
+            <img src="img/holcim.png" alt="Holcim" class="brand-logo">
+            <h3>HOLCIM</h3>
+            <p>Calidad profesional para trabajos exigentes</p>
+        </div>
+        <div class="brand">
+            <img src="img/corona.png" alt="Corona" class="brand-logo">
+            <h3>Pinturas Corona</h3>
+            <p>Los mejores acabados para tu hogar</p>
+        </div>
+        <div class="brand">
+            <img src="img/ingco.png" alt="Ingco" class="brand-logo">
+            <h3>Herramientas Ingco</h3>
+            <p>Tecnología e innovación en herramientas eléctricas</p>
+        </div>
+        <div class="brand">
+            <img src="img/truper.png" alt="Truper" class="brand-logo">
+            <h3>Herramientas Truper</h3>
+            <p>La mejor relación calidad-precio</p>
+        </div>
+        <div class="brand">
+            <img src="img/durman.png" alt="Durman" class="brand-logo">
+            <h3>Durman</h3>
+            <p>La mejor relación calidad-precio</p>
+        </div>
+
+        <div class="brand">
+            <img src="img/saltex.png" alt="Saltex" class="brand-logo">
+            <h3>Bloques Saltex</h3>
+            <p>Calidad profesional para trabajos exigentes</p>
+        </div>
+        <div class="brand">
+            <img src="img/imacasa.png" alt="Corona" class="brand-logo">
+            <h3>Imacasa</h3>
+            <p>Los mejores acabados para tu hogar</p>
+        </div>
+        <div class="brand">
+            <img src="img/reflex.png" alt="Ingco" class="brand-logo">
+            <h3>Reflex</h3>
+            <p>Tecnología e innovación en herramientas eléctricas</p>
+        </div>
+        <div class="brand">
+            <img src="img/stihl.png" alt="Truper" class="brand-logo">
+            <h3>STIHL</h3>
+            <p>La mejor relación calidad-precio</p>
+        </div>
+        <div class="brand">
+            <img src="img/lth.png" alt="Truper" class="brand-logo">
+            <h3>Baterias LTH</h3>
+            <p>La mejor relación calidad-precio</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de servicios -->
+    <section class="section services-section" id="servicios">
+        <div class="section-header">
+            <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+            <p class="section-subtitle">Más que una ferretería, somos tu aliado en cada proyecto</p>
+        </div>
+
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-truck-moving"></i>
+                </div>
+                <h3>Entrega a Domicilio</h3>
+                <p>Llevamos tus compras hasta la puerta de tu casa sin costo adicional en el casco urbano, y con un pequeño costo adicional en los alrededores del distrito</p>
+                <div class="service-tag">Envío</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <h3>Asesoría Técnica</h3>
+                <p>Nuestros compañeros te ayudan a elegir los mejores materiales y herramientas para tu proyecto y te brindan asesoría ante cualquier consulta</p>
+                <div class="service-tag">Incluido</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Reparación de Herramientas</h3>
+                <p>Servicio técnico especializado para herramientas eléctricas y manuales de todas las marcas, nuestros proveedores brindan este servidio por la garantía en sus productos</p>
+                <div class="service-tag">Garantía</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Corte a Medida</h3>
+                <p>Corte de madera, acero, aluminio y PVC por tus compras y según tus necesidades específicas</p>
+                <div class="service-tag">Precisión</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre nosotros -->
+    <section class="section about-section" id="nosotros">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre <span class="highlight">Nosotros</span></h2>
+                <p>En Ferretería Cruz llevamos más de 20 años sirviendo a la comunidad con productos de calidad y un servicio excepcional. Somos una empresa familiar comprometida con el éxito de tus proyectos.</p>
+
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Productos de calidad garantizada</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Precios competitivos y accesibles</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Atención personalizada y amable</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Amplio catálogo de productos</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"La mejor ferretería de la ciudad. Siempre encuentran lo que necesito y su asesoría es invaluable para mis proyectos de renovación."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Carlos Rodríguez</strong>
+                        <span>Cliente desde 2010</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <div class="image-container">
+                    <img src="img/fachada.png" alt="Ferretería Cruz interior">
+                    <div class="image-overlay">
+                        <h3>20 años de experiencia</h3>
+                        <p>Construyendo confianza juntos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="section contact-section" id="contacto">
+    <div class="section-header">
+        <h2 class="section-title">Nuestras <span class="highlight">Sucursales</span></h2>
+        <p class="section-subtitle">Encuéntranos en 4 convenientes ubicaciones</p>
+    </div>
+
+    <!-- Grid de sucursales -->
+    <div class="sucursales-grid">
+        <!-- Sucursal Berlín -->
+        <div class="sucursal-card">
+            <div class="sucursal-header">
+                <i class="fas fa-store"></i>
+                <h3>Berlín</h3>
+            </div>
+            <div class="sucursal-body">
+                <p><i class="fas fa-map-marker-alt"></i> Av. 14 de diciembre, Barrio La Parroquia, Berlín</p>
+                <p><i class="fas fa-phone"></i> +503 7853-5329</p>
+                <p><i class="fas fa-clock"></i> Lun-Vie 7am-5pm, Sáb 7am-12m</p>
+                <a href="https://www.google.com/maps/place/Ferreter%C3%ADa+Cruz+Berlin/@13.4998865,-88.5317675,16z/data=!4m16!1m9!3m8!1s0x8f7b4be6080615af:0xae98e8610ee9df5b!2sFerreter%C3%ADa+Cruz+Berlin!8m2!3d13.4994031!4d-88.528071!9m1!1b1!16s%2Fg%2F11g2n_p6vg!3m5!1s0x8f7b4be6080615af:0xae98e8610ee9df5b!8m2!3d13.4994031!4d-88.528071!16s%2Fg%2F11g2n_p6vg!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" class="btn-small">Ver en mapa</a>
+            </div>
+        </div>
+
+        <!-- Sucursal Mercedes Umaña -->
+        <div class="sucursal-card">
+            <div class="sucursal-header">
+                <i class="fas fa-store"></i>
+                <h3>Mercedes Umaña</h3>
+            </div>
+            <div class="sucursal-body">
+                <p><i class="fas fa-map-marker-alt"></i> Calle principal Mercedes Umaña, a una cuadra de Agroservicio don Pedro</p>
+                <p><i class="fas fa-phone"></i> +503 7602-6492</p>
+                <p><i class="fas fa-clock"></i> Lun-Vie 7am-5pm, Sáb 7am-12m</p>
+                <a href="https://www.google.com/maps/place/Ferreter%C3%ADa+Cruz,+Mercedes+Uma%C3%B1a/@13.563776,-88.491467,17z/data=!3m1!4b1!4m6!3m5!1s0x8f64b567df3f3ddf:0x7a6fcf24229a35d2!8m2!3d13.5637708!4d-88.4888921!16s%2Fg%2F11g72961yl!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" class="btn-small">Ver en mapa</a>
+            </div>
+        </div>
+
+        <!-- Sucursal Santiago de María -->
+        <div class="sucursal-card">
+            <div class="sucursal-header">
+                <i class="fas fa-store"></i>
+                <h3>Santiago de María</h3>
+            </div>
+            <div class="sucursal-body">
+                <p><i class="fas fa-map-marker-alt"></i> 2 Av. Norte, Barrio El Calvario, Santiago de María</p>
+                <p><i class="fas fa-phone"></i> +503 7602-9537</p>
+                <p><i class="fas fa-clock"></i> Lun-Vie 7am-5pm, Sáb 7am-12m</p>
+                <a href="https://www.google.com/maps/place/Ferreter%C3%ADa+Cruz+%E2%80%A2+Santiago+de+Mar%C3%ADa/@13.485482,-88.4649888,17z/data=!4m8!3m7!1s0x8f7b35a884a98833:0x95279a1f6954b5a4!8m2!3d13.485482!4d-88.4649888!9m1!1b1!16s%2Fg%2F11p0_7b2tw!5m1!1e4?authuser=0&hl=es&entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" class="btn-small">Ver en mapa</a>
+            </div>
+        </div>
+
+        <!-- Sucursal El Triunfo -->
+        <div class="sucursal-card">
+            <div class="sucursal-header">
+                <i class="fas fa-store"></i>
+                <h3>El Triunfo</h3>
+            </div>
+            <div class="sucursal-body">
+                <p><i class="fas fa-map-marker-alt"></i>Carretera Panamericana, Barrio El Calvario, frente a Retaurante La Joya, El Triunfo</p>
+                <p><i class="fas fa-phone"></i> +503 7602-6533</p>
+                <p><i class="fas fa-clock"></i> Lun-Vie 7am-5pm, Sáb 7am-12m</p>
+                <a href="https://www.google.com/maps/place/Ferreteria+La+Cruz/@13.5576218,-88.4323032,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x8f64cb00617be7b3:0xd87acfd1950d048!2sFerreteria+La+Cruz!8m2!3d13.5576166!4d-88.4274323!16s%2Fg%2F11x78xy77x!3m5!1s0x8f64cb00617be7b3:0xd87acfd1950d048!8m2!3d13.5576166!4d-88.4274323!16s%2Fg%2F11x78xy77x!5m1!1e4?authuser=0&hl=es&entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" class="btn-small">Ver en mapa</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="social-links" style="text-align: center; margin-top: 50px;">
+        <h3>Síguenos en redes</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/FerreteriaCruzBMTS" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ferreteriacruzsv/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=76026492" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@ferreteriacruzsv" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <!-- Mapa general (opcional) -->
+ <!--    <div class="map-container">
+        <div class="map">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Ubícanos fácilmente</h3>
+            <p>Estamos en el centro de la ciudad, con estacionamiento gratuito para clientes</p>
+            <a href="#" class="btn btn-outline">Ver en Google Maps</a>
+        </div>
+    </div> -->
+</section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-tools"></i>
+                    <div>
+                        <h3>Ferretería Cruz<span class="logo-highlight">Cruz</span></h3>
+                        <p>Tu aliado en cada proyecto</p>
+                    </div>
+                </div>
+                <p class="footer-description">Más de veinte años brindando productos de calidad y servicio excepcional a la comunidad.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Horarios</h4>
+                <ul>
+                    <li><strong>Lunes a Viernes:</strong> 7:00 AM - 5:00 PM</li>
+                    <li><strong>Sábados:</strong> 7:00 AM - 12:00 PM</li>
+                    <li><strong>Domingos:</strong> Cerrado</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ferretería Cruz. Todos los derechos reservados.</p>
+            <p>Diseñado por <i class="fas fa-heart"></i>Carlos Mauricio López</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/qr/MRJIY53II7GNC1" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>¿Necesitas ayuda?</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
