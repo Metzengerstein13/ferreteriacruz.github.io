@@ -340,7 +340,7 @@ ul {
 /* ===== CARRUSEL DE OFERTAS ===== */
 .ofertas-carousel {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 30px auto;
     overflow: hidden;
     border-radius: var(--border-radius);
