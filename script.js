@@ -1,3 +1,90 @@
+// ===== CARRUSEL DE OFERTAS =====
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel-container');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (!carousel || slides.length === 0) return; // Si no hay carrusel, salir
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoSlideInterval;
+
+    // Función para mostrar el slide actual
+    function showSlide(index) {
+        if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentIndex = 0;
+        } else {
+            currentIndex = index;
+        }
+        
+        // Mover el carrusel
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Actualizar puntos activos
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+    }
+
+    // Eventos de botones
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            showSlide(currentIndex - 1);
+            resetAutoSlide();
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            showSlide(currentIndex + 1);
+            resetAutoSlide();
+        });
+    }
+
+    // Eventos de puntos
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+            resetAutoSlide();
+        });
+    });
+
+    // Auto-slide cada 5 segundos
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            showSlide(currentIndex + 1);
+        }, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Iniciar auto-slide
+    startAutoSlide();
+
+    // Pausar auto-slide cuando el mouse está sobre el carrusel
+    const carouselSection = document.querySelector('.ofertas-carousel');
+    if (carouselSection) {
+        carouselSection.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+        
+        carouselSection.addEventListener('mouseleave', () => {
+            startAutoSlide();
+        });
+    }
+// Mostrar el primer slide
+    showSlide(0);
+});
+
+
 // Datos de productos (simulados)
 const productos = [
     {
