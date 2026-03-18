@@ -341,8 +341,7 @@ ul {
 .ofertas-carousel {
     position: relative;
     max-width: 900px;
-    width: 900px; 
-    margin: 30px auto;
+    margin: 20px auto;
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
