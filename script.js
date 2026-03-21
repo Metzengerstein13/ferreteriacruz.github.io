@@ -268,7 +268,7 @@ function renderProducts() {
 }
 
 // Función para cargar más productos
-/*function loadMoreProducts() {
+function loadMoreProducts() {
     visibleProducts += 3;
     renderProducts();
 }
@@ -302,7 +302,7 @@ function handleContactForm(e) {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
     }, 1500);
-}*/
+}
 
 // Función para animar números en estadísticas
 function animateStats() {
