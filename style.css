@@ -348,7 +348,7 @@ ul {
     background-color: #f5f5f5;
 }
 
-/* ¡ESTA ES LA REGLA QUE FALTABA! */
+/* Container */
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
